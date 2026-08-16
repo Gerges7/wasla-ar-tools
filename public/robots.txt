@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wasla-ar-tools.gergesmorad17.workers.dev/sitemap.xml

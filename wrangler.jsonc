@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "wasla-ar-tools",
+  "compatibility_date": "2026-08-16",
+  "assets": {
+    "directory": "./public/",
+    "not_found_handling": "404-page"
+  }
+}

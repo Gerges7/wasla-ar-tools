@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d7c66">
+  <meta name="description" content="نسّق قائمة أرقام واتساب، أضف رمز الدولة، اكتشف الأرقام غير الصالحة والمكررة، وانسخها أو حمّل CSV.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://wasla-ar-tools.gergesmorad17.workers.dev/phone-formatter.html">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="تنسيق أرقام واتساب وإضافة رمز الدولة — وصلة">
+  <meta property="og:description" content="نسّق قائمة أرقام واتساب، أضف رمز الدولة، اكتشف الأرقام غير الصالحة والمكررة، وانسخها أو حمّل CSV.">
+  <meta property="og:url" content="https://wasla-ar-tools.gergesmorad17.workers.dev/phone-formatter.html">
+  <meta property="og:site_name" content="وصلة">
+  <title>تنسيق أرقام واتساب وإضافة رمز الدولة — وصلة</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "منسق أرقام واتساب من وصلة", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head><body>
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="وصلة — الصفحة الرئيسية"><img src="assets/icons/logo.svg" alt=""><span>وصلة</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">القائمة</button>
+    <nav id="mainNav" class="main-nav" aria-label="التنقل الرئيسي"><a href="index.html" class="">الرئيسية</a><a href="whatsapp-link.html" class="">رابط واتساب</a><a href="qr-generator.html" class="">QR</a><a href="profit-calculator.html" class="">حاسبة الربح</a><a href="faq.html" class="">الأسئلة</a></nav>
+  </div>
+</header><main id="main"><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">الرئيسية</a><span>›</span><span>منسق الأرقام</span></div><span class="eyebrow">أداة مجانية تعمل داخل المتصفح</span><h1>تنسيق أرقام واتساب دفعة واحدة</h1><p>الصق قائمة الأرقام، اختر الدولة، واحصل على صيغة دولية موحدة مع اكتشاف الأرقام المكررة وغير الصالحة.</p></div></section>
+<section class="tool-shell"><div class="container tool-layout">
+  <div class="panel"><div class="panel-heading"><span class="step-badge">1</span><div><h2>أدخل القائمة</h2><p>رقم في كل سطر، أو افصل بينها بفاصلة.</p></div></div><form id="formatterForm"><div class="field"><label for="formatCountry">الدولة الافتراضية</label><select id="formatCountry"><option value="20" selected>مصر (+20)</option><option value="966">السعودية (+966)</option><option value="971">الإمارات (+971)</option><option value="965">الكويت (+965)</option><option value="974">قطر (+974)</option><option value="973">البحرين (+973)</option><option value="968">عُمان (+968)</option><option value="962">الأردن (+962)</option><option value="964">العراق (+964)</option><option value="212">المغرب (+212)</option><option value="213">الجزائر (+213)</option><option value="216">تونس (+216)</option><option value="218">ليبيا (+218)</option><option value="249">السودان (+249)</option></select></div><div class="field"><label for="numbersInput">الأرقام</label><textarea id="numbersInput" rows="12" placeholder="01012345678&#10;01123456789&#10;+201225556677"></textarea><small class="help">الأرقام لا تُرفع إلى خادم؛ التنسيق يتم على جهازك.</small></div><div class="actions"><button class="btn btn-primary" type="submit">تنسيق الأرقام</button><button id="clearBtn" class="btn btn-danger" type="button">مسح</button></div></form><p id="status" class="status"></p></div>
+  <aside class="panel result-panel"><div class="panel-heading"><span class="step-badge">2</span><div><h2>النتيجة</h2><p id="formatSummary">ستظهر الأرقام المنسقة هنا.</p></div></div><div id="emptyState" class="empty-state"><div class="tool-symbol">01</div><strong>لا توجد نتائج بعد</strong><span>الصق القائمة واضغط «تنسيق الأرقام».</span></div><div id="formatterResult" hidden><div class="actions"><button id="copyAllBtn" class="btn btn-primary" type="button">نسخ الصالح</button><button id="csvBtn" class="btn btn-secondary" type="button">تحميل CSV</button></div><div class="table-wrap" style="margin-top:14px"><table><thead><tr><th>الرقم الأصلي</th><th>الصيغة الدولية</th><th>واتساب</th><th>الحالة</th></tr></thead><tbody id="resultsBody"></tbody></table></div></div></aside>
+</div></section>
+<section class="section section-white"><div class="narrow prose"><h2>لماذا نستخدم الصيغة الدولية؟</h2><p>روابط واتساب وأنظمة إدارة العملاء تحتاج غالبًا إلى رقم يتكون من رمز الدولة ثم الرقم المحلي دون الصفر الأول. على سبيل المثال، الرقم المصري الذي يبدأ بـ010 يتحول إلى صيغة تبدأ بـ+20 ثم بقية الرقم.</p><h3>ماذا تفعل الأداة؟</h3><p>تزيل المسافات والشرطات والرموز، وتحول الأرقام العربية إلى إنجليزية، وتضيف رمز الدولة عند عدم وجوده. كما تعرض التكرارات والأرقام التي لا تقع ضمن الطول الدولي المعتاد.</p><div class="callout">التحقق هنا شكلي يعتمد على طول الرقم، وليس تأكيدًا أن الرقم مسجل فعليًا على واتساب. افتح الرابط أو تواصل مع العميل للتأكد.</div></div></section>
+</main><footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html"><img src="assets/icons/logo.svg" alt=""><span>وصلة</span></a>
+      <p class="footer-about">أدوات عربية مجانية تساعد أصحاب المشروعات الصغيرة على التواصل مع العملاء، تنظيم الأرقام، وحساب الأسعار دون تسجيل أو اشتراك.</p>
+    </div>
+    <div class="footer-col"><strong>الأدوات</strong><a href="whatsapp-link.html">منشئ رابط واتساب</a><a href="qr-generator.html">منشئ QR</a><a href="phone-formatter.html">منسق الأرقام</a><a href="profit-calculator.html">حاسبة الربح</a></div>
+    <div class="footer-col"><strong>الموقع</strong><a href="about.html">عن وصلة</a><a href="faq.html">الأسئلة الشائعة</a><a href="contact.html">تواصل معنا</a></div>
+    <div class="footer-col"><strong>قانوني</strong><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a></div>
+  </div>
+  <div class="container copyright"><span>© <span data-year></span> وصلة. جميع الحقوق محفوظة.</span><span>تعمل الأدوات داخل متصفحك.</span></div>
+</footer>
+<noscript><div class="noscript">يجب تفعيل JavaScript لاستخدام الأدوات.</div></noscript>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/ads-config.js"></script>
+<script src="assets/js/adsense.js"></script>
+<script src="assets/js/formatter.js"></script>
+</body>
+</html>

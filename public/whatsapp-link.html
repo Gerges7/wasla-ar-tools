@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d7c66">
+  <meta name="description" content="أنشئ رابط واتساب مباشر برسالة جاهزة ورمز QR مجانًا، مع دعم الأرقام العربية ورموز الدول.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://wasla-ar-tools.gergesmorad17.workers.dev/whatsapp-link.html">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="إنشاء رابط واتساب وQR مجانًا — وصلة">
+  <meta property="og:description" content="أنشئ رابط واتساب مباشر برسالة جاهزة ورمز QR مجانًا، مع دعم الأرقام العربية ورموز الدول.">
+  <meta property="og:url" content="https://wasla-ar-tools.gergesmorad17.workers.dev/whatsapp-link.html">
+  <meta property="og:site_name" content="وصلة">
+  <title>إنشاء رابط واتساب وQR مجانًا — وصلة</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "منشئ رابط واتساب من وصلة", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head><body>
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="وصلة — الصفحة الرئيسية"><img src="assets/icons/logo.svg" alt=""><span>وصلة</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">القائمة</button>
+    <nav id="mainNav" class="main-nav" aria-label="التنقل الرئيسي"><a href="index.html" class="">الرئيسية</a><a href="whatsapp-link.html" class="active">رابط واتساب</a><a href="qr-generator.html" class="active">QR</a><a href="profit-calculator.html" class="active">حاسبة الربح</a><a href="faq.html" class="">الأسئلة</a></nav>
+  </div>
+</header><main id="main"><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">الرئيسية</a><span>›</span><span>منشئ رابط واتساب</span></div><span class="eyebrow">أداة مجانية تعمل داخل المتصفح</span><h1>إنشاء رابط واتساب مباشر وQR</h1><p>اكتب رقم واتساب والرسالة التي تريد ظهورها للعميل، ثم انسخ الرابط أو حمّل QR للاستخدام في البايو والمطبوعات.</p></div></section>
+<section class="tool-shell"><div class="container tool-layout">
+  <div class="panel"><div class="panel-heading"><span class="step-badge">1</span><div><h2>بيانات الرابط</h2><p>يمكنك لصق الرقم المحلي أو الدولي.</p></div></div>
+    <form id="whatsappForm" novalidate>
+      <div class="field-grid"><div class="field"><label for="countryCode">الدولة</label><select id="countryCode"><option value="20" selected>مصر (+20)</option><option value="966">السعودية (+966)</option><option value="971">الإمارات (+971)</option><option value="965">الكويت (+965)</option><option value="974">قطر (+974)</option><option value="973">البحرين (+973)</option><option value="968">عُمان (+968)</option><option value="962">الأردن (+962)</option><option value="964">العراق (+964)</option><option value="212">المغرب (+212)</option><option value="213">الجزائر (+213)</option><option value="216">تونس (+216)</option><option value="218">ليبيا (+218)</option><option value="249">السودان (+249)</option></select></div>
+      <div class="field"><label for="phone">رقم واتساب</label><input id="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01012345678" required><small class="help">اكتب الرقم دون مسافات أو الصقه كما هو.</small><small id="phoneError" class="help error" role="alert"></small></div></div>
+      <fieldset class="templates"><legend>قالب سريع</legend><div class="chips"><button type="button" class="chip active" data-message="مرحبًا، أريد الاستفسار عن المنتج.">استفسار</button><button type="button" class="chip" data-message="مرحبًا، أريد طلب هذا المنتج. هل هو متاح؟">طلب منتج</button><button type="button" class="chip" data-message="مرحبًا، أريد معرفة السعر والتفاصيل من فضلك.">معرفة السعر</button><button type="button" class="chip" data-message="مرحبًا، أريد حجز موعد. ما المواعيد المتاحة؟">حجز موعد</button></div></fieldset>
+      <div class="field"><div class="label-row"><label for="message">الرسالة الجاهزة</label><span id="messageCount">0 / 220</span></div><textarea id="message" maxlength="220" placeholder="اكتب رسالة قصيرة وواضحة...">مرحبًا، أريد الاستفسار عن المنتج.</textarea><small class="help">الحد القصير يحافظ على سهولة قراءة QR.</small></div>
+      <button class="btn btn-primary btn-block" type="submit">إنشاء الرابط والـQR</button>
+    </form>
+  </div>
+  <aside class="panel result-panel" aria-live="polite"><div class="panel-heading"><span class="step-badge">2</span><div><h2>النتيجة</h2><p>انسخ الرابط أو افتحه أو حمّل QR.</p></div></div>
+    <div id="emptyState" class="empty-state"><div class="tool-symbol">↗</div><strong>لم يتم إنشاء رابط بعد</strong><span>املأ البيانات واضغط زر الإنشاء.</span></div>
+    <div id="resultContent" class="result-content" hidden><div class="qr-box"><div id="qrcode"></div></div><label for="generatedLink">رابط واتساب</label><div class="output-box"><input id="generatedLink" type="text" readonly><button id="copyBtn" class="btn btn-primary btn-sm" type="button">نسخ</button></div><div class="actions"><a id="openBtn" class="btn btn-secondary" href="#" target="_blank" rel="noopener">فتح واتساب</a><button id="downloadBtn" class="btn btn-secondary" type="button">تحميل QR</button></div><p id="status" class="status" role="status"></p></div>
+  </aside>
+</div></section>
+<div class="container ad-zone" data-position="inline" aria-label="إعلان"></div>
+<section class="section section-white"><div class="narrow prose"><h2>ما هو رابط واتساب المباشر؟</h2><p>رابط واتساب المباشر يفتح محادثة مع رقم محدد دون أن يضطر العميل إلى حفظ الرقم أولًا. ويمكن إضافة رسالة مسبقة تظهر داخل مربع الكتابة، فيحتاج العميل فقط إلى مراجعتها والضغط على الإرسال.</p><h3>أين تستخدم الرابط؟</h3><ul><li>في السيرة الذاتية لصفحة إنستجرام أو تيك توك.</li><li>داخل صفحة المنتج أو إعلان ممول.</li><li>على كارت العمل، قائمة الأسعار، العبوة، أو فاتورة الطلب.</li><li>داخل رسالة بريد إلكتروني أو صفحة حجز.</li></ul><h3>نصائح لرسالة أفضل</h3><p>اجعل الرسالة قصيرة ومحددة. بدلًا من «أريد تفاصيل»، استخدم «مرحبًا، أريد معرفة سعر المنتج ومصاريف الشحن إلى القاهرة». الرسالة الواضحة تقلل عدد الأسئلة المتبادلة وتسرّع الرد.</p><div class="callout">لا تضف معلومات حساسة أو كلمات مرور داخل الرسالة الجاهزة؛ أي شخص يحصل على الرابط يستطيع قراءة النص الموجود فيه.</div></div></section>
+<section class="section"><div class="narrow"><div class="section-heading"><h2>أسئلة شائعة</h2></div><div class="faq-list"><details><summary>هل يتم حفظ الرقم أو الرسالة؟</summary><p>لا. إنشاء الرابط والـQR يتم داخل المتصفح، ولا يرسل الموقع البيانات إلى قاعدة بيانات.</p></details><details><summary>هل يجب كتابة علامة +؟</summary><p>لا. اختر الدولة واكتب الرقم المحلي، أو الصق الرقم الدولي كاملًا.</p></details><details><summary>لماذا يجب أن تكون الرسالة قصيرة؟</summary><p>كلما زاد النص، أصبح QR أكثر كثافة وصعوبة في المسح، خصوصًا عند طباعته بحجم صغير.</p></details></div></div></section>
+</main><footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html"><img src="assets/icons/logo.svg" alt=""><span>وصلة</span></a>
+      <p class="footer-about">أدوات عربية مجانية تساعد أصحاب المشروعات الصغيرة على التواصل مع العملاء، تنظيم الأرقام، وحساب الأسعار دون تسجيل أو اشتراك.</p>
+    </div>
+    <div class="footer-col"><strong>الأدوات</strong><a href="whatsapp-link.html">منشئ رابط واتساب</a><a href="qr-generator.html">منشئ QR</a><a href="phone-formatter.html">منسق الأرقام</a><a href="profit-calculator.html">حاسبة الربح</a></div>
+    <div class="footer-col"><strong>الموقع</strong><a href="about.html">عن وصلة</a><a href="faq.html">الأسئلة الشائعة</a><a href="contact.html">تواصل معنا</a></div>
+    <div class="footer-col"><strong>قانوني</strong><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a></div>
+  </div>
+  <div class="container copyright"><span>© <span data-year></span> وصلة. جميع الحقوق محفوظة.</span><span>تعمل الأدوات داخل متصفحك.</span></div>
+</footer>
+<noscript><div class="noscript">يجب تفعيل JavaScript لاستخدام الأدوات.</div></noscript>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/ads-config.js"></script>
+<script src="assets/js/adsense.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script src="assets/js/whatsapp.js"></script>
+</body>
+</html>

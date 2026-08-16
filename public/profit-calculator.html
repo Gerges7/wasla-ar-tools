@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d7c66">
+  <meta name="description" content="احسب سعر البيع بعد تكلفة المنتج والمصاريف وعمولة المنصة والضريبة، واعرف صافي الربح وهامش الربح.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://wasla-ar-tools.gergesmorad17.workers.dev/profit-calculator.html">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="حاسبة سعر البيع وهامش الربح والعمولة — وصلة">
+  <meta property="og:description" content="احسب سعر البيع بعد تكلفة المنتج والمصاريف وعمولة المنصة والضريبة، واعرف صافي الربح وهامش الربح.">
+  <meta property="og:url" content="https://wasla-ar-tools.gergesmorad17.workers.dev/profit-calculator.html">
+  <meta property="og:site_name" content="وصلة">
+  <title>حاسبة سعر البيع وهامش الربح والعمولة — وصلة</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "حاسبة سعر البيع والربح من وصلة", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head><body>
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="وصلة — الصفحة الرئيسية"><img src="assets/icons/logo.svg" alt=""><span>وصلة</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">القائمة</button>
+    <nav id="mainNav" class="main-nav" aria-label="التنقل الرئيسي"><a href="index.html" class="">الرئيسية</a><a href="whatsapp-link.html" class="">رابط واتساب</a><a href="qr-generator.html" class="">QR</a><a href="profit-calculator.html" class="">حاسبة الربح</a><a href="faq.html" class="">الأسئلة</a></nav>
+  </div>
+</header><main id="main"><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">الرئيسية</a><span>›</span><span>حاسبة الربح</span></div><span class="eyebrow">أداة مجانية تعمل داخل المتصفح</span><h1>حاسبة سعر البيع وصافي الربح</h1><p>أدخل تكلفة المنتج والمصاريف والنسبة المستهدفة، وستحسب الأداة سعر البيع والعمولة والضريبة وصافي الربح.</p></div></section>
+<section class="tool-shell"><div class="container tool-layout">
+  <div class="panel"><div class="panel-heading"><span class="step-badge">1</span><div><h2>بيانات التكلفة</h2><p>استخدم أرقامًا تقريبية واقعية.</p></div></div><form id="profitForm"><div class="field-grid"><div class="field"><label for="productCost">تكلفة المنتج</label><input id="productCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="100" required></div><div class="field"><label for="currency">العملة</label><select id="currency"><option value="EGP" selected>جنيه مصري</option><option value="SAR">ريال سعودي</option><option value="AED">درهم إماراتي</option><option value="USD">دولار أمريكي</option></select></div></div><div class="field-grid"><div class="field"><label for="shippingCost">تغليف وشحن تتحمله</label><input id="shippingCost" type="number" min="0" step="0.01" value="0"></div><div class="field"><label for="otherCost">مصاريف أخرى</label><input id="otherCost" type="number" min="0" step="0.01" value="0"></div></div><div class="field"><label for="profitMethod">طريقة حساب الهدف</label><select id="profitMethod"><option value="markup" selected>نسبة ربح من إجمالي التكلفة</option><option value="margin">هامش ربح من سعر البيع قبل الضريبة</option></select></div><div class="field-grid-3"><div class="field"><label for="targetProfit">نسبة الربح %</label><input id="targetProfit" type="number" min="0" max="500" step="0.1" value="30"></div><div class="field"><label for="platformFee">عمولة المنصة %</label><input id="platformFee" type="number" min="0" max="90" step="0.1" value="0"></div><div class="field"><label for="taxRate">ضريبة مضافة للعميل %</label><input id="taxRate" type="number" min="0" max="100" step="0.1" value="0"></div></div><small id="profitError" class="help error"></small><button class="btn btn-primary btn-block" type="submit">احسب السعر والربح</button></form></div>
+  <aside class="panel result-panel"><div class="panel-heading"><span class="step-badge">2</span><div><h2>ملخص الحساب</h2><p>النتائج تقديرية وتعتمد على إدخالك.</p></div></div><div id="emptyState" class="empty-state"><div class="tool-symbol">%</div><strong>أدخل التكلفة أولًا</strong><span>ستظهر تفاصيل السعر والربح هنا.</span></div><div id="profitResult" hidden><div class="metrics-grid"><div class="metric"><span>إجمالي التكلفة</span><strong id="totalCostOut">—</strong></div><div class="metric"><span>السعر قبل الضريبة</span><strong id="subtotalOut">—</strong></div><div class="metric"><span>عمولة المنصة</span><strong id="feeOut">—</strong></div><div class="metric"><span>قيمة الضريبة</span><strong id="taxOut">—</strong></div><div class="metric"><span>السعر النهائي للعميل</span><strong id="finalPriceOut">—</strong></div><div class="metric"><span>صافي الربح</span><strong id="netProfitOut">—</strong></div><div class="metric"><span>هامش الربح الفعلي</span><strong id="marginOut">—</strong></div></div><p id="status" class="status"></p></div></aside>
+</div></section>
+<section class="section section-white"><div class="narrow prose"><h2>الفرق بين نسبة الزيادة وهامش الربح</h2><p>نسبة الربح من التكلفة تعني إضافة نسبة إلى إجمالي ما دفعته. إذا كانت التكلفة 100 وأضفت 30%، يصبح الربح المستهدف 30 قبل احتساب عمولة المنصة. أما هامش الربح فهو نسبة الربح من سعر البيع نفسه، ولذلك يحتاج سعرًا أعلى لتحقيق نفس الرقم.</p><h3>كيف تعامل الأداة الضريبة؟</h3><p>تفترض الأداة أن الضريبة تضاف فوق السعر قبل الضريبة، وليست جزءًا من الربح. تختلف القواعد الضريبية حسب البلد ونوع النشاط، لذلك استخدم النتيجة للتقدير الأولي وراجع محاسبًا عند الحاجة.</p><h3>تكاليف لا تنسها</h3><ul><li>التغليف والملصقات.</li><li>جزء من مصروف الإعلان لكل طلب.</li><li>عمولة بوابة الدفع أو منصة البيع.</li><li>المرتجعات والتالف.</li><li>الشحن الذي تتحمله بدل العميل.</li></ul><div class="callout">هذه أداة حسابية وليست استشارة محاسبية أو ضريبية. تحقق من القوانين والرسوم المطبقة على نشاطك.</div></div></section>
+</main><footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html"><img src="assets/icons/logo.svg" alt=""><span>وصلة</span></a>
+      <p class="footer-about">أدوات عربية مجانية تساعد أصحاب المشروعات الصغيرة على التواصل مع العملاء، تنظيم الأرقام، وحساب الأسعار دون تسجيل أو اشتراك.</p>
+    </div>
+    <div class="footer-col"><strong>الأدوات</strong><a href="whatsapp-link.html">منشئ رابط واتساب</a><a href="qr-generator.html">منشئ QR</a><a href="phone-formatter.html">منسق الأرقام</a><a href="profit-calculator.html">حاسبة الربح</a></div>
+    <div class="footer-col"><strong>الموقع</strong><a href="about.html">عن وصلة</a><a href="faq.html">الأسئلة الشائعة</a><a href="contact.html">تواصل معنا</a></div>
+    <div class="footer-col"><strong>قانوني</strong><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a></div>
+  </div>
+  <div class="container copyright"><span>© <span data-year></span> وصلة. جميع الحقوق محفوظة.</span><span>تعمل الأدوات داخل متصفحك.</span></div>
+</footer>
+<noscript><div class="noscript">يجب تفعيل JavaScript لاستخدام الأدوات.</div></noscript>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/ads-config.js"></script>
+<script src="assets/js/adsense.js"></script>
+<script src="assets/js/profit.js"></script>
+</body>
+</html>

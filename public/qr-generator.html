@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d7c66">
+  <meta name="description" content="أنشئ QR Code مجانًا لرابط أو نص أو هاتف أو بريد إلكتروني أو شبكة Wi-Fi، ثم حمّله PNG.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://wasla-ar-tools.gergesmorad17.workers.dev/qr-generator.html">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="إنشاء QR Code للرابط أو النص مجانًا — وصلة">
+  <meta property="og:description" content="أنشئ QR Code مجانًا لرابط أو نص أو هاتف أو بريد إلكتروني أو شبكة Wi-Fi، ثم حمّله PNG.">
+  <meta property="og:url" content="https://wasla-ar-tools.gergesmorad17.workers.dev/qr-generator.html">
+  <meta property="og:site_name" content="وصلة">
+  <title>إنشاء QR Code للرابط أو النص مجانًا — وصلة</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "منشئ QR المجاني من وصلة", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head><body>
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="وصلة — الصفحة الرئيسية"><img src="assets/icons/logo.svg" alt=""><span>وصلة</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">القائمة</button>
+    <nav id="mainNav" class="main-nav" aria-label="التنقل الرئيسي"><a href="index.html" class="">الرئيسية</a><a href="whatsapp-link.html" class="">رابط واتساب</a><a href="qr-generator.html" class="">QR</a><a href="profit-calculator.html" class="">حاسبة الربح</a><a href="faq.html" class="">الأسئلة</a></nav>
+  </div>
+</header><main id="main"><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">الرئيسية</a><span>›</span><span>منشئ QR</span></div><span class="eyebrow">أداة مجانية تعمل داخل المتصفح</span><h1>منشئ QR Code لأي محتوى</h1><p>حوّل رابطًا أو نصًا أو بيانات اتصال أو شبكة Wi‑Fi إلى رمز QR قابل للتحميل بصيغة PNG.</p></div></section>
+<section class="tool-shell"><div class="container tool-layout">
+  <div class="panel"><div class="panel-heading"><span class="step-badge">1</span><div><h2>اختر المحتوى</h2><p>حدد نوع QR ثم أدخل البيانات.</p></div></div>
+    <form id="qrForm" novalidate><div class="field"><label for="qrType">نوع المحتوى</label><select id="qrType"><option value="url" selected>رابط موقع</option><option value="text">نص</option><option value="phone">رقم هاتف</option><option value="email">بريد إلكتروني</option><option value="wifi">شبكة Wi‑Fi</option></select></div><div class="field"><label for="qrValue">الرابط</label><textarea id="qrValue" rows="4" maxlength="900" placeholder="https://example.com"></textarea></div><div id="wifiFields" hidden><div class="field-grid"><div class="field"><label for="wifiPassword">كلمة مرور الشبكة</label><input id="wifiPassword" type="text" autocomplete="off"></div><div class="field"><label for="wifiSecurity">نوع الحماية</label><select id="wifiSecurity"><option value="WPA" selected>WPA/WPA2</option><option value="WEP">WEP</option><option value="nopass">بدون كلمة مرور</option></select></div></div></div><small id="qrError" class="help error" role="alert"></small><button class="btn btn-primary btn-block" type="submit">إنشاء QR</button></form>
+  </div>
+  <aside class="panel result-panel" aria-live="polite"><div class="panel-heading"><span class="step-badge">2</span><div><h2>النتيجة</h2><p>اختبر الرمز قبل طباعته.</p></div></div><div id="emptyState" class="empty-state"><div class="tool-symbol">▦</div><strong>QR سيظهر هنا</strong><span>أدخل المحتوى واضغط زر الإنشاء.</span></div><div id="resultContent" hidden><div class="qr-box"><div id="qrcode"></div></div><label for="qrContent">المحتوى المشفّر</label><div class="output-box"><input id="qrContent" readonly><button id="copyBtn" class="btn btn-primary btn-sm" type="button">نسخ</button></div><div class="actions"><button id="downloadBtn" class="btn btn-secondary" type="button">تحميل PNG</button></div><p id="status" class="status"></p></div></aside>
+</div></section>
+<section class="section section-white"><div class="narrow prose"><h2>اختيار الحجم المناسب لرمز QR</h2><p>عند استخدام QR على شاشة الهاتف، يكون المسح سهلًا غالبًا. أما عند الطباعة فاختبر الرمز بالحجم الحقيقي ومن أكثر من هاتف. يجب ترك مساحة بيضاء حول الرمز وعدم قص الحواف أو وضع نص فوق المربعات.</p><h3>الرابط القصير أفضل</h3><p>كلما كان المحتوى أقصر، أصبح نمط QR أبسط وأسهل في المسح. لذلك استخدم رابطًا مباشرًا وتجنب إضافة معاملات طويلة لا تحتاج إليها.</p><h3>QR لشبكة Wi‑Fi</h3><p>اختر نوع «شبكة Wi‑Fi»، ثم اكتب اسم الشبكة وكلمة المرور ونوع الحماية. عند مسح الرمز من هاتف متوافق، يمكن للمستخدم الانضمام للشبكة دون كتابة كلمة المرور يدويًا.</p><div class="callout">أي شخص يرى QR الخاص بالشبكة قد يتمكن من قراءة بيانات الاتصال؛ لا تنشره في مكان عام إلا إذا كانت الشبكة مخصصة للضيوف.</div></div></section>
+</main><footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html"><img src="assets/icons/logo.svg" alt=""><span>وصلة</span></a>
+      <p class="footer-about">أدوات عربية مجانية تساعد أصحاب المشروعات الصغيرة على التواصل مع العملاء، تنظيم الأرقام، وحساب الأسعار دون تسجيل أو اشتراك.</p>
+    </div>
+    <div class="footer-col"><strong>الأدوات</strong><a href="whatsapp-link.html">منشئ رابط واتساب</a><a href="qr-generator.html">منشئ QR</a><a href="phone-formatter.html">منسق الأرقام</a><a href="profit-calculator.html">حاسبة الربح</a></div>
+    <div class="footer-col"><strong>الموقع</strong><a href="about.html">عن وصلة</a><a href="faq.html">الأسئلة الشائعة</a><a href="contact.html">تواصل معنا</a></div>
+    <div class="footer-col"><strong>قانوني</strong><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a></div>
+  </div>
+  <div class="container copyright"><span>© <span data-year></span> وصلة. جميع الحقوق محفوظة.</span><span>تعمل الأدوات داخل متصفحك.</span></div>
+</footer>
+<noscript><div class="noscript">يجب تفعيل JavaScript لاستخدام الأدوات.</div></noscript>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/ads-config.js"></script>
+<script src="assets/js/adsense.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script src="assets/js/qr.js"></script>
+</body>
+</html>
