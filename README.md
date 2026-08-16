@@ -19,3 +19,4 @@ Cloudflare Dashboard → Workers & Pages → wasla-ar-tools → Settings → Bui
 
 ## ملاحظة AdSense
 الإعلانات غير مفعلة بعد. يتم تفعيلها لاحقًا بعد تجهيز الموقع والموافقة، مع الحفاظ على المشروع مجاني التكلفة قدر الإمكان في البداية.
+Deployment test
